@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account and Data Deletion — Omega Wallet</title>
+<style>
+  :root {
+    --ink: #1c2321;
+    --paper: #fbfaf7;
+    --rule: #d8d4cb;
+    --muted: #5c6360;
+    --mark: #2f6f4e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 1rem; margin-bottom: 2rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 0; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.4rem 0 .6rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  ol.steps { counter-reset: step; list-style: none; padding-left: 0; }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.4rem;
+    margin-bottom: .8rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: .15rem;
+    width: 1.65rem;
+    height: 1.65rem;
+    border: 1px solid var(--mark);
+    border-radius: 50%;
+    color: var(--mark);
+    font-size: .85rem;
+    text-align: center;
+    line-height: 1.6rem;
+  }
+  ul { padding-left: 1.15rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--mark); }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 700; }
+  .callout { border-left: 3px solid var(--mark); padding: .1rem 0 .1rem 1rem; margin: 1.5rem 0; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  @media (max-width: 30rem) { body { font-size: 16px; } h1 { font-size: 1.6rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Delete your Omega Wallet account and data</h1>
+  <p class="meta">App: Omega Wallet · Developer: Abdul Basit, publishing as Omega Tech Developers · Last updated: 12 September 2026</p>
+</header>
+
+<p>You can delete your Omega Wallet account and everything stored with it at any time. There are two ways to do it.</p>
+
+<h2>Delete from inside the app</h2>
+
+<ol class="steps">
+  <li>Open Omega Wallet and sign in.</li>
+  <li>Go to the <strong>Profile</strong> tab.</li>
+  <li>Tap <strong>Delete account</strong>.</li>
+  <li>Confirm when asked. If you are prompted for your password, enter it so we can verify it is you.</li>
+</ol>
+
+<p>Your account and records are removed immediately and you are signed out.</p>
+
+<h2>Request deletion by email</h2>
+
+<p>If you can no longer sign in, send an email to <strong>omegadevelopers47@gmail.com</strong> from the email address registered to your account, with the subject line <strong>Delete my Omega Wallet account</strong>. We verify the request and complete the deletion within 7 days, and we will reply to confirm once it is done.</p>
+
+<h2>What gets deleted</h2>
+
+<table>
+  <tr><th>Data</th><th>What happens</th></tr>
+  <tr><td>Account and sign-in record (name, email address, password credential, authentication ID)</td><td>Deleted permanently</td></tr>
+  <tr><td>Income sources and the expenses recorded against them</td><td>Deleted permanently</td></tr>
+  <tr><td>General expenses (utilities, food, clothing and similar)</td><td>Deleted permanently</td></tr>
+  <tr><td>Cashbook entries: names, phone numbers, amounts given and received, dates, notes</td><td>Deleted permanently</td></tr>
+  <tr><td>Currency choice and app preferences</td><td>Deleted permanently</td></tr>
+  <tr><td>Anonymous crash and diagnostic logs</td><td>Not linked to your account; automatically discarded by Firebase within its standard retention window (up to 90 days)</td></tr>
+  <tr><td>PDF reports you already exported or shared to WhatsApp, email or Drive</td><td>Stay on your device or wherever you saved them; delete those yourself</td></tr>
+</table>
+
+<div class="callout">
+  <p>Deletion is permanent and cannot be undone. Export any cashbook PDF reports you want to keep before you delete your account.</p>
+</div>
+
+<h2>Retention</h2>
+
+<p>We do not keep a backup copy of deleted accounts. Once deletion is processed there is no waiting or grace period and no archived copy to restore.</p>
+
+<h2>Contact</h2>
+
+<p>For help with deletion or any question about your data: <strong>omegadevelopers47@gmail.com</strong></p>
+
+<footer>
+  <p>Omega Wallet · <a href="privacy-policy.html">Privacy Policy</a></p>
+</footer>
+
+</div>
+</body>
+</html>
